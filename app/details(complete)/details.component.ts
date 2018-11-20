@@ -8,7 +8,7 @@ import { screen } from "tns-core-modules/platform";
 import { Landmark } from "../landmark";
 import { LandmarksService } from "../landmarks-service";
 import { AnimationsService } from "../animations-service";
-
+//
 @Component({
 	selector: "Details",
 	moduleId: module.id,
@@ -29,7 +29,7 @@ export class DetailsComponent {
 	constructor(private animationsService: AnimationsService,
 		private landmarksService: LandmarksService,
 		private routerExtensions: RouterExtensions) {
-			
+
 		this.offset = this.animationsService.animationOffset;
 		this.landmark = this.landmarksService.getSelected();
 	}
@@ -57,7 +57,7 @@ export class DetailsComponent {
 
 	onScroll(args: ScrollEventData) {
 		let imageContainer = this.imageContainerRef.nativeElement;
-		
+
 		let offset = args.scrollY < 0 ? 0 : args.scrollY;
 		let imageHeight = imageContainer.getActualSize().height;
 

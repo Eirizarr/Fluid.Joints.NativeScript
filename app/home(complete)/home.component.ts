@@ -18,7 +18,7 @@ import { AnimationsService } from "../animations-service";
 import { LandmarksService } from "../landmarks-service";
 import { ActionButtonComponent } from "../action-button/action-button.component";
 
-
+//
 @Component({
     selector: "app-home",
     moduleId: module.id,

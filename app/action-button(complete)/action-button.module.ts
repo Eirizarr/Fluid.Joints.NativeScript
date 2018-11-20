@@ -8,10 +8,7 @@ import { NativeScriptUIDataFormModule } from "nativescript-ui-dataform/angular";
 import { NativeScriptUIAutoCompleteTextViewModule } from "nativescript-ui-autocomplete/angular";
 import { NativeScriptUIGaugeModule } from "nativescript-ui-gauge/angular";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
-
-import { DetailsRoutingModule } from "./details-routing.module";
-import { DetailsComponent } from "./details.component";
-import { ActionButtonModule } from "../action-button/action-button.module";
+import { ActionButtonComponent } from "./action-button.component";
 
 @NgModule({
 	imports: [
@@ -23,15 +20,16 @@ import { ActionButtonModule } from "../action-button/action-button.module";
 		NativeScriptUIAutoCompleteTextViewModule,
 		NativeScriptUIGaugeModule,
 		NativeScriptCommonModule,
-		DetailsRoutingModule,
-		NativeScriptFormsModule,
-		ActionButtonModule
+		NativeScriptFormsModule
 	],
 	declarations: [
-		DetailsComponent
+		ActionButtonComponent
+	],
+	exports: [
+		ActionButtonComponent
 	],
 	schemas: [
 		NO_ERRORS_SCHEMA
 	]
 })
-export class DetailsModule { }
+export class ActionButtonModule { }
